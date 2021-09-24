@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+html {
+    font-size: 10px;
+    color: #030303;
+}
+
+.app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainContent {
+    width: 90%;
+    align-self: center;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainContent {
+        grid-template-columns: 1fr;
+    }
+}

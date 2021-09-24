@@ -1,0 +1,54 @@
+.content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 20px 0 8px;
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.content h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.iframeBox {
+    width: auto;
+    height: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.loadingMessage {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .loadingMessage {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .loadingMessage {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .loadingMessage {
+        font-size: 3rem;
+    }
+}
