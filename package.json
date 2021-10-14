@@ -1,5 +1,6 @@
 {
     "name": "gogoapps-youtube-api",
+    "homepage": "https://corquaid.github.io/mini-youtube-app",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -11,14 +12,15 @@
         "react-dom": "^17.0.2",
         "react-hook-form": "^7.15.4",
         "react-scripts": "4.0.3",
-        "react-youtube": "^7.13.1",
         "web-vitals": "^1.0.1"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --watchAll",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -40,6 +42,7 @@
     },
     "devDependencies": {
         "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
-        "enzyme": "^3.11.0"
+        "enzyme": "^3.11.0",
+        "gh-pages": "^3.2.3"
     }
 }
