@@ -7,10 +7,10 @@ const VideoCard = ({ video }) => {
 
     const { url } = video.snippet.thumbnails.medium;
     const { title, channelTitle } = video.snippet;
-    
-    const handleVideoSelect = (video) => {
-        setSelectedVideo(video)
-    }
+
+    const handleVideoSelect = video => {
+        setSelectedVideo(video);
+    };
 
     return (
         <div className={styles.content} onClick={() => handleVideoSelect(video)}>

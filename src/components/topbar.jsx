@@ -8,8 +8,7 @@ const TopBar = ({ handleSearch }) => {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
-        const searchKeyWord = Object.values(data).toString(); // some manipulation required here as react-hook-form returns a data object from the search input and the API call needs a string search parameter
-        handleSearch(searchKeyWord);
+        handleSearch(data.search);
         reset();
     };
 

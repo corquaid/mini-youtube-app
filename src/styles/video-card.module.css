@@ -3,14 +3,13 @@
     height: 90px;
     display: grid;
     grid-template-columns: 160px 1fr;
-    grid-template-areas: 
-        "thumbnail info";
+    grid-template-areas: "thumbnail info";
     margin-bottom: 8px;
     cursor: pointer;
 }
 
 .content:hover {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .image {
@@ -31,13 +30,13 @@
 
 .title {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
 }
 
 .channel {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
     color: #606060;

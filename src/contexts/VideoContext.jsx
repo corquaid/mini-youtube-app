@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 const VideoContext = createContext();
 
 const VideoProvider = ({ children }) => {
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(false);
     const [videos, setVideos] = useState([]);
     const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -13,10 +13,10 @@ const VideoProvider = ({ children }) => {
         videos,
         setVideos,
         selectedVideo,
-        setSelectedVideo
-    }
+        setSelectedVideo,
+    };
 
-    return <VideoContext.Provider value={contextProps}>{children}</VideoContext.Provider>
-}
+    return <VideoContext.Provider value={contextProps}>{children}</VideoContext.Provider>;
+};
 
 export { VideoProvider, VideoContext };

@@ -7,13 +7,11 @@ import Player from "./components/player";
 import styles from "./styles/App.module.css";
 
 const App = () => {
-
-    const { setLoading, setVideos } = useContext(VideoContext)
+    const { setLoading, setVideos } = useContext(VideoContext);
 
     const handleSubmit = async searchTerm => {
         try {
             setLoading(true);
-            console.log(searchTerm)
             const response = await apiCall.get("/search", {
                 params: {
                     q: searchTerm,

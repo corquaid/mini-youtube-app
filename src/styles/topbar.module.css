@@ -36,7 +36,7 @@
     margin: 0;
     font-size: 1rem;
     text-decoration: none;
-    color: inherit
+    color: inherit;
 }
 
 .formContainer {
@@ -59,7 +59,7 @@
     width: 100%;
     align-self: center;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.8rem;
     padding-left: 10px;
 }
